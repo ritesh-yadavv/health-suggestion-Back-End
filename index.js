@@ -9,7 +9,7 @@ import cors from 'cors'
 const app = express()
 dotenv.config()
 const corsOptions = {
-    origin: process.env.CLIENT_URL || "http://localhost:5173", // Change this to your frontend URL
+    origin: process.env.CLIENT_URL || "https://health-suggestion.netlify.app/", // Change this to your frontend URL
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"], // Allowed HTTP methods
     allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
